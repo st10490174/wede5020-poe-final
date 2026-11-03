@@ -120,3 +120,9 @@ document.addEventListener("DOMContentLoaded", () => {
         setInterval(nextSlide, slideInterval);
     }
 });
+
+function.openLightbox(src){
+    document.getElementById(lightbox-img).src = src;
+    document.getElementById('lightbox').style.display = 'flex';
+}
+});

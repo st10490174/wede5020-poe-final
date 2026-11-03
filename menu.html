@@ -189,6 +189,24 @@
         </div>
     </footer>
     <script src="script.js"></script>
+  <div id="lightbox" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.9); z-index:999999; align-items:center; justify-content:center; cursor:pointer;" onclick="this.style.display='none'">
+  <img id="lightbox-img" style="max-width:90%; max-height:90%; border-radius:12px;">
+</div>
+ 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  document.querySelectorAll('.responsive-img').forEach(img => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    });
+  });
+});
+</script>
+ 
 </body>
 
 </html>

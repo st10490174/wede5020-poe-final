@@ -70,7 +70,7 @@
             <h2 class="section-title">TODAY'S FRESH HIGHLIGHTS</h2>
             <div class="card-grid-3">
                 <div class="item-card">
-                    <img src="_images/highlight-1.jpg" alt="Traditional Sourdough Bread" class="responsive-img" onclick="openLighbox(this.src)" style="cursor:pointer;">
+                    <img src="_images/highlight-1.jpg" alt="Traditional Sourdough Bread" class="responsive-img" style="cursor:pointer;" onclick="document.getElementById('lightbox-img').src=this.src; document.getElementById('lightbox').style.display='flex';">
                     <div class="card-body">
                         <h3>Traditional Sourdough Bread</h3>
                         <p>Artisanal slow-fermented crusty sourdough loaf made with South African organic wheat flour
@@ -79,7 +79,7 @@
                 </div>
 
                 <div class="item-card">
-                    <img src="_images/highlight-2.jpg" alt="Warm Honey & Cinnamon Pastries" class="responsive-img" onclick="openLighbox(this.src)" style="cursor:pointer;">
+                    <img src="_images/highlight-2.jpg" alt="Warm Honey & Cinnamon Pastries" class="responsive-img" style="cursor:pointer;" onclick="document.getElementById('lightbox-img').src=this.src; document.getElementById('lightbox').style.display='flex';">
                     <div class="card-body">
                         <h3>Warm Honey & Cinnamon Pastries</h3>
                         <p>Flaky layered pastries baked fresh every morning and glazed with regional honey.</p>
@@ -87,7 +87,7 @@
                 </div>
 
                 <div class="item-card">
-                    <img src="_images/highlight-3.jpg" alt="Custom Celebration Cakes" class="responsive-img" onclick="openLighbox(this.src)" style="cursor:pointer;">
+                    <img src="_images/highlight-3.jpg" alt="Custom Celebration Cakes" class="responsive-img" style="cursor:pointer;" onclick="document.getElementById('lightbox-img').src=this.src; document.getElementById('lightbox').style.display='flex';">
                     <div class="card-body">
                         <h3>Custom Celebration Cakes</h3>
                         <p>Handcrafted cakes designed tailored to your special occasions and family milestones.</p>
@@ -145,7 +145,7 @@ contact info, quick links to website pages and branded copyright khwezi bakes te
         </div>
     </footer>
     <script src="script.js"></script>
-   <div id="lightbox" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.9); z-index:99999; align-items:center; justify-content:center;">
+  <div id="lightbox" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.9); z-index:999999; align-items:center; justify-content:center;" onclick="this.style.display='none'">
   <img id="lightbox-img" style="max-width:90%; max-height:90%; border-radius:10px;">
 </div>
 

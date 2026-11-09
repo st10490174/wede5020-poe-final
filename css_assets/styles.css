@@ -733,3 +733,11 @@ textarea.form-control {
     max-width: 90%;
     max-height: 90%;
     border-radius: 12px;}
+
+/* Ensure your mobile menu container is scrollable and constrained to the screen */
+.mobile-menu-container, 
+#navigation nav { /* Adjust selector to match your specific menu wrapper class */
+    max-height: 80vh;   /* Keeps the menu from overflowing past the screen */
+    overflow-y: auto;    /* Allows users to scroll down to see hidden items like 'Our Story' */
+}
+

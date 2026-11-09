@@ -741,3 +741,31 @@ textarea.form-control {
     overflow-y: auto;    /* Allows users to scroll down to see hidden items like 'Our Story' */
 }
 
+@media screen and (max-width: 768px) {
+    #navigation table, 
+    #navigation tr, 
+    #navigation td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #navigation img {
+        margin: 0 auto;
+    }
+
+    /* Add these lines to make the menu scrollable so "Contact us" appears */
+    nav {
+        text-align: center;
+        margin-top: 15px;
+        max-height: 60vh;       /* Restricts the maximum height */
+        overflow-y: auto;        /* Lets users scroll down to see "Contact us" */
+        padding-bottom: 20px;    /* Gives breathing room at the bottom */
+    }
+
+    nav a {
+        display: block;          /* Stacks the links vertically */
+        margin: 10px auto;       /* Adds vertical spacing between links */
+    }
+}
+
